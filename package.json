@@ -1,0 +1,12 @@
+{
+  "name": "11ty-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "dev":"npx @11ty/eleventy --serve",
+    "build":"npx @11ty/eleventy"
+  },
+  "author": "",
+  "license": "ISC"
+}
