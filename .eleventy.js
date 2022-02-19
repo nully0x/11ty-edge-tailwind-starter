@@ -4,7 +4,7 @@ const edge = new Edge({cache:false})
 module.exports = function (eleventyConfig) {
     eleventyConfig.addTemplateFormats("edge");
     eleventyConfig.addPassthroughCopy({
-        "./src/assets": "./assets/"
+        "./src/assets": "./"
     });
     eleventyConfig.addWatchTarget('./src/_includes/components/')
     eleventyConfig.addWatchTarget('./src/_includes/layouts/')

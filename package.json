@@ -4,8 +4,8 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "dev": "npx @11ty/eleventy --serve & npx tailwindcss -i ./src/style/style.css -o ./dist/assets/style.css --watch",
-    "build": "npx @11ty/eleventy && npx tailwindcss -i ./src/style/style.css -o ./dist/assets/style.css"
+    "dev": "npx @11ty/eleventy --serve & npx tailwindcss -i ./src/style/style.css -o ./dist/style.css --watch",
+    "build": "npx @11ty/eleventy && npx tailwindcss -i ./src/style/style.css -o ./dist/style.css"
   },
   "author": "",
   "license": "ISC",
