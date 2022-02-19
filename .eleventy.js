@@ -10,10 +10,6 @@ const edge = new Edge({ cache: false })
 edge.mount(join(__dirname, 'src/_includes'))
 
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addPassthroughCopy({
-        "./src/assets": "./assets/"
-    });
-
     eleventyConfig.addTemplateFormats("edge");
 
     // "clowd" here means that the extension will apply to any .clowd file

@@ -4,12 +4,15 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "dev": "npx @11ty/eleventy --serve",
+    "dev": "npx @11ty/eleventy --serve && npx tailwindcss -i ./src/assets/style.css -o ./dist/assets/style.css --watch",
     "build": "npx @11ty/eleventy"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "edge.js": "^5.3.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
   }
 }
