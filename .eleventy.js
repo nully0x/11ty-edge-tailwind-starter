@@ -1,22 +1,18 @@
 const { join } = require('path')
 const { Edge } = require('edge.js')
-const edge = new Edge({ cache: false })
-edge.mount(join(__dirname, 'src/_includes'))
-
+const edge = new Edge({cache:false})
 module.exports = function (eleventyConfig) {
     eleventyConfig.addTemplateFormats("edge");
     eleventyConfig.addPassthroughCopy({
         "./src/assets": "./assets/"
     });
-    eleventyConfig.addWatchTarget("./src/_includes/**/*.edge")
-    // "clowd" here means that the extension will apply to any .clowd file
+    eleventyConfig.addWatchTarget('./src/_includes/components/')
+    eleventyConfig.addWatchTarget('./src/_includes/layouts/')
     eleventyConfig.addExtension("edge", {
       compile: async (inputContent) => {
-        // Replace any instances of cloud with butt
-        let output = edge.renderRaw(inputContent)
-  
         return async () => {
-          return output;
+            edge.mount(join(__dirname, 'src/_includes/'))
+            return edge.renderRaw(inputContent)
         };
       }
     });
