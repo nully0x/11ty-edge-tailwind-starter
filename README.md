@@ -1,11 +1,8 @@
-# 11ty Boilerplate
+# 11ty starter using Edge
 
-`/src/assets` : tous les assets, après le build ils se retrouveront dans /assets
+`/src/assets` : Assets
 
-`/src/pages` : toutes les pages, après le build ils se retrouveront à la racine (/)
+`/src/pages` : Pages
 
-`/src/_includes` : toutes tes parties
+`/src/_includes` : Partials/Components/...
 
----
-
-Le build se retrouvera dans `/dist`
