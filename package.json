@@ -4,9 +4,12 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "dev":"npx @11ty/eleventy --serve",
-    "build":"npx @11ty/eleventy"
+    "dev": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "edge.js": "^5.3.2"
+  }
 }
