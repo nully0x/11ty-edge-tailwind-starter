@@ -5,7 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "dev": "npx @11ty/eleventy --serve & npx tailwindcss -i ./src/style/style.css -o ./dist/style.css --watch",
-    "build": "npx @11ty/eleventy && npx tailwindcss -i ./src/style/style.css -o ./dist/style.css"
+    "build": "npx @11ty/eleventy && npx tailwindcss -i ./src/style/style.css -o ./dist/style.css --minify"
   },
   "author": "",
   "license": "ISC",
