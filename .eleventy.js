@@ -10,9 +10,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget('./src/_includes/layouts/')
     eleventyConfig.addExtension("edge", {
       compile: async (inputContent) => {
-        return async () => {
+        return async (data) => {
             edge.mount(join(__dirname, 'src/_includes/'))
-            return edge.renderRaw(inputContent)
+            return edge.renderRaw(inputContent,data)
         };
       }
     });
